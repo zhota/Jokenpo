@@ -1,0 +1,7 @@
+.menu .play-button, .menu .how-to-play-button {
+    padding: 20px;
+    margin: 0 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+};
