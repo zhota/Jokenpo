@@ -1,4 +1,3 @@
-import { stat } from 'fs';
 import paper from '../../images/paper.png'
 import rock from '../../images/rock.png';
 import scissor from '../../images/scissor.png';
