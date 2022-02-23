@@ -23,3 +23,12 @@
     width: 80px;
     height: 30px;
 }
+
+.play-area-result .wrapper-result {
+    display: flex;
+}
+
+.wrapper-result div {
+    width: 100%;
+    align-self: center;
+}
