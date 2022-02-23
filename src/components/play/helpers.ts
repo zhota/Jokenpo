@@ -22,14 +22,14 @@ export const getImage = (choice: string) => {
 export const startGame = (choice: string, setResult: any, setCPUMove: any) => {
     const CPUChoices = ['paper', 'rock', 'scissor'];
     const random = Math.floor(Math.random() * CPUChoices.length);
-    const CPUMove = setCPUMove(CPUChoices[random]);
+    setCPUMove(CPUChoices[random]);
 
-    if (choice === CPUMove) {
+    if (choice === CPUChoices[random]) {
         return setResult("Empatou!");
     };
 
     if (choice === 'paper') {
-        switch(CPUMove) {
+        switch(CPUChoices[random]) {
             case 'rock':
                 setResult("Você venceu!");
                 break;
@@ -40,7 +40,7 @@ export const startGame = (choice: string, setResult: any, setCPUMove: any) => {
     };
 
     if (choice === 'rock') {
-        switch(CPUMove) {
+        switch(CPUChoices[random]) {
             case 'scissor':
                 setResult("Você venceu!");
                 break;
@@ -51,7 +51,7 @@ export const startGame = (choice: string, setResult: any, setCPUMove: any) => {
     };
 
     if (choice === 'scissor') {
-        switch(CPUMove) {
+        switch(CPUChoices[random]) {
             case 'paper':
                 setResult("Você venceu!");
                 break;
